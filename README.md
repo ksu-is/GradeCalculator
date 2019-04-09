@@ -1,21 +1,20 @@
-# Brand Website
+# GradeCalculator
 
 
 ___
 
 ## What purpose of this project: 
 
-The idea is to create a website to promote a brand. 
 
 
-* Will install django
-* Use templates to design website.
-* feature 5 pages
+* 
+* 
+* 
 
 
 
 #### Who will use: 
-People looking up for brand info
+Teachers and students
 
 ___
 
