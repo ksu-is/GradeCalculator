@@ -24,14 +24,14 @@ Teachers and students
  Document how to work [xx] repository
  Document issues encounted
 
-Eric Vo/ Curtis Jones
+#Eric Vo/ Curtis Jones
  Find related repository
  Evaluate related repository
  Clone repository
  Change templates
  launch websites
  
-Eric Vo/ Curtis Jones
+#Eric Vo/ Curtis Jones
  Evaluate related repositoriies [1]
  Evaluate related repositoriies [2]
  Evaluate related repositoriies [3]
