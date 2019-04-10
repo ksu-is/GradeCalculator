@@ -5,7 +5,7 @@ ___
 
 ## What purpose of this project: 
 
-
+Our purpose is to make grading for teachers easiers and more effective. Students will recieve their grades faster and see their overall grade in class for the whole year.
 
 * 
 * 
@@ -27,7 +27,7 @@ ___
 - [X] Find related repository
 - [X] Clone repository into team
 - [X] Ensure repository is public
-- [ ] Assign an open source license
+- [X ] Assign an open source license
 - [ ] Make sure team members have access to repository
 
 - [ ] Evaluate related repository
