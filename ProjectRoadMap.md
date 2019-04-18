@@ -11,23 +11,18 @@ ___
 - [X] Clone repository into team
 - [X] Ensure repository is public
 - [X] Assign an open source license
-- [ ] Make sure team members have access to repository
-
+- [X] Make sure team members have access to repository
 - [ ] Evaluate related repository
 - [ ] Test repository & get it running
 - [ ] Document how to work [x] repository 
 - [ ] Document issues encounted
-
-
-
-Curtis/Eric
 - [ ] Find related repository
 - [ ] Evalutate related respository
 - [ ] Clone respository
 - [ ] Change templates
 - [ ] launch websites
-- [ ] ...
-- [ ] ...
+- [ ] Make the source code user friendly
+- [ ] Add a GPA calculator to the code
 - [ ] ...
 - [ ] ...
 
