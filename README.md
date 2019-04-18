@@ -27,7 +27,7 @@ ___
 - [X] Find related repository
 - [X] Clone repository into team
 - [X] Ensure repository is public
-- [X ] Assign an open source license
+- [X] Assign an open source license
 - [ ] Make sure team members have access to repository
 
 - [ ] Evaluate related repository
