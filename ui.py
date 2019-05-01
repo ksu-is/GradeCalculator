@@ -4,7 +4,8 @@ Author: Joshua Costa
 Created: 3/15/19
 '''
 
-import tkinter as tk 
+import tkinter as tk
+from tkinter import *
 from grade_calculator import GradeCalculator
 import tkinter.messagebox
 
@@ -18,8 +19,10 @@ class AppGUI(tk.Tk):
 
         # Initialize the window
         tk.Tk.__init__(self, *args, **kwargs)
+        self.SCREEN_WIDTH = 1000
+        self.SCREEN_HEIGHT = 750
         self.title('Grade Calculator')
-        self.geometry("600x650")
+        self.geometry(str(self.SCREEN_WIDTH)+"x"+str(self.SCREEN_HEIGHT))               # ADDED SCREEN_ TO MODIFY SIZE WINDOW
         self.resizable(0,0)
 
         # Create the Frame
@@ -50,24 +53,29 @@ class MainMenuPage(tk.Frame):
     def __init__(self, parent, controller):
 
         # Initialize the Frame
-        tk.Frame.__init__(self, parent, bg='light grey')
+        tk.Frame.__init__(self, parent, bg='#FFCA33')
 
         # Label for the title
-        self.title = tk.Label(self, text='Grade Calculator v2', font=TITLE_FONT, bg='light grey')
-        self.title.place(relx=.25, rely=.2)
+        self.title = tk.Label(self, text='Grade Calculator', font=TITLE_FONT, bg='#FFCA33')
+        self.title.place(relx=0.5, rely=.2,anchor=CENTER)
+
+        # Label for the title
+        self.title = tk.Label(self, text='Revamped By Eric Vo and Curtis Jones', font=HEADER_FONT, bg='#FFCA33')
+        self.title.place(relx=0.5, rely=.25, anchor=CENTER)
 
         # Label for the author
-        self.author = tk.Label(self, text='Original Source By: Joshua Costa', font=HEADER_FONT, bg='light grey')
-        self.author.place(relx=.39, rely=.3)
-
+        self.author = tk.Label(self, text='Source Code by Joshua Costa', font=HEADER_FONT, bg='#FFCA33')
+        self.author.place(relx=.5, rely=.3,anchor=CENTER)
 
         # Start button
-        self.calc_button = tk.Button(self, text='Calculate', font=DEFAULT_FONT, command=(lambda: self._change_frame_and_start_button_text(controller)))
-        self.calc_button.place(relx=.46, rely=.4)
+        self.calc_button = tk.Button(self, text='Start', font=DEFAULT_FONT,command=(lambda: self._change_frame_and_start_button_text(controller)))
+        self.calc_button.place(relx=0.5, rely=0.5,anchor=CENTER)
+        self.calc_button.config(height = 2, width = 7)
 
         # Exit button
-        self.exit_button = tk.Button(self, text='Exit Calculator', font=DEFAULT_FONT, command=controller.destroy)
-        self.exit_button.place(relx=.47, rely=.47)
+        self.exit_button = tk.Button(self, text='Exit', font=DEFAULT_FONT, command=controller.destroy)
+        self.exit_button.place(relx=0.5, rely=0.56,anchor=CENTER)
+        self.exit_button.config(height = 2, width = 7) 
 
     def _change_frame_and_start_button_text(self, controller):
         controller.show_frame(CalculatorPage)
@@ -79,7 +87,7 @@ class CalculatorPage(tk.Frame):
     def __init__(self, parent, controller):
 
         # Initialize the Frame
-        tk.Frame.__init__(self, parent, bg='black')
+        tk.Frame.__init__(self, parent, bg='#FFCA33')
 
         # Create new GradeCalculator class
         self.calculator = GradeCalculator()
@@ -89,36 +97,36 @@ class CalculatorPage(tk.Frame):
         self.can_calculate_grade = False
 
         # Create the field that adds new categories
-        self.category_name_label = tk.Label(self, text='Category Name', font=HEADER_FONT, bg='light grey')
+        self.category_name_label = tk.Label(self, text='Category Name', font=HEADER_FONT, bg='#FFCA33')
         self.category_name_label.grid(row=0,column=0)
 
         self.new_category = tk.StringVar()
         self.category_name_entry = tk.Entry(self, textvariable=self.new_category, font=DEFAULT_FONT)
         self.category_name_entry.grid(row=1,column=0)
 
-        self.category_percentage_label = tk.Label(self, text='Percentage of Category', font=HEADER_FONT, bg='light grey')
+        self.category_percentage_label = tk.Label(self, text='Impact in Percentage', font=HEADER_FONT, bg='#FFCA33')
         self.category_percentage_label.grid(row=2,column=0)
 
         self.new_category_percentage = tk.StringVar()
         self.category_percentage_entry = tk.Entry(self, textvariable=self.new_category_percentage, font=DEFAULT_FONT)
         self.category_percentage_entry.grid(row=3, column=0)
 
-        self.category_button = tk.Button(self, text= "Add new grade category", font=DEFAULT_FONT, command=(lambda: self._create_new_category(self.new_category.get(), self.new_category_percentage.get())))
+        self.category_button = tk.Button(self, text= "Add The Category", font=DEFAULT_FONT, command=(lambda: self._create_new_category(self.new_category.get(), self.new_category_percentage.get())))
         self.category_button.grid(row=4, column=0, pady=5)
 
         # Create category removal capabilities
-        self.remove_category_button = tk.Button(self, text="Remove grade category", font=DEFAULT_FONT, command=(lambda: self._remove_category(self.chosen_category.get())))
+        self.remove_category_button = tk.Button(self, text="Remove The Category", font=DEFAULT_FONT, command=(lambda: self._remove_category(self.chosen_category.get())))
         self.remove_category_button.grid(row=5, column=0, pady=5)
 
         # Create the field that adds new assignments
-        self.assignment_name_label = tk.Label(self, text='Assignment Name', font=HEADER_FONT, bg='light grey')
+        self.assignment_name_label = tk.Label(self, text='Assignment Name', font=HEADER_FONT, bg='#FFCA33')
         self.assignment_name_label.grid(row=0,column=1)
 
         self.new_assignment = tk.StringVar()
         self.assignment_name_entry = tk.Entry(self, textvariable=self.new_assignment, font=DEFAULT_FONT)
         self.assignment_name_entry.grid(row=1,column=1)
 
-        self.assignment_score_label = tk.Label(self, text='Assignment Score (Score/Possible Score)', font=HEADER_FONT, bg='light grey')
+        self.assignment_score_label = tk.Label(self, text='Assignment Score (Score/Possible Score)', font=HEADER_FONT, bg='#FFCA33')
         self.assignment_score_label.grid(row=2,column=1)
 
         self.new_assignment_score = tk.StringVar()
@@ -126,12 +134,12 @@ class CalculatorPage(tk.Frame):
         self.assignment_score_entry.grid(row=3,column=1)
 
         self.chosen_category = tk.StringVar()
-        self.chosen_category.set('Choose a Category')
-        self.category_chooser = tk.OptionMenu(self, self.chosen_category, 'Choose a Category')
+        self.chosen_category.set('Choose The Category')
+        self.category_chooser = tk.OptionMenu(self, self.chosen_category, '-')
         self.category_chooser.config(font=DEFAULT_FONT)
         self.category_chooser.grid(row=4,column=1, pady = 10)
 
-        self.assignment_button = tk.Button(self, text="Add new assignment", font=DEFAULT_FONT, command=(lambda: self._create_new_assignment(self.chosen_category.get(), self.new_assignment.get(), self.new_assignment_score.get())))
+        self.assignment_button = tk.Button(self, text="Add Assignment", font=DEFAULT_FONT, command=(lambda: self._create_new_assignment(self.chosen_category.get(), self.new_assignment.get(), self.new_assignment_score.get())))
         self.assignment_button.grid(row=5,column=1)
             
         # Create the text box that shows all categories and assignments
