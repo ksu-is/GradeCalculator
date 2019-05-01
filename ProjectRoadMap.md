@@ -12,20 +12,13 @@ ___
 - [X] Ensure repository is public
 - [X] Assign an open source license
 - [X] Make sure team members have access to repository
-- [ ] Evaluate related repository
-- [ ] Test repository & get it running
-- [ ] Document how to work [x] repository 
+- [X] Evaluate related repository
+- [X] Test repository & get it running
+- [ ] Document how to work [xx] repository 
 - [ ] Document issues encounted
-- [ ] Find related repository
-- [ ] Evalutate related respository
-- [ ] Clone respository
-- [ ] Change templates
-- [ ] launch websites
-- [ ] Make the source code user friendly
-- [ ] Add a GPA calculator to the code
-- [ ] ...
-- [ ] ...
-
-
-___
-___
+- [X] Find related repository
+- [X] Evalutate related respository
+- [X] Clone respository
+- [X] Change code
+- [X] Test program
+- [ ] Present program
