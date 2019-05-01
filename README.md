@@ -7,14 +7,11 @@ ___
 
 Our purpose is to make grading for teachers easiers and more effective. Students will recieve their grades faster and see their overall grade in class for the whole year.
 
-* 
-* 
-* 
 
 
 
 #### Who will use: 
-Teachers and students
+Teachers 
 
 ___
 
@@ -28,36 +25,23 @@ ___
 - [X] Clone repository into team
 - [X] Ensure repository is public
 - [X] Assign an open source license
-- [ ] Make sure team members have access to repository
+- [X] Make sure team members have access to repository
 
-- [ ] Evaluate related repository
-- [ ] Test repository & get it running
+- [X] Evaluate related repository
+- [X] Test repository & get it running
 - [ ] Document how to work [xx] repository 
 - [ ] Document issues encounted
 
 
 
 Curtis/Eric
-- [ ] Find related repository
-- [ ] Evalutate related respository
-- [ ] Clone respository
-- [ ] Change templates
-- [ ] launch websites
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
+- [X] Find related repository
+- [X] Evalutate related respository
+- [X] Clone respository
+- [X] Change code
+- [X] Test program
+- [ ] Present program
 
-Curtis/Eric
-- [ ] Find related repository
-- [ ] Evalutate related respository
-- [ ] Clone respository
-- [ ] Change templates
-- [ ] launch websites
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
 
 
 
