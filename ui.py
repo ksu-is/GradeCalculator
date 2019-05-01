@@ -1,7 +1,9 @@
 '''
 UI Module for Grade Calculator
 Author: Joshua Costa
+Revamped By: Eric Vo and Curtis Jones
 Created: 3/15/19
+Edited: 4/18/19
 '''
 
 import tkinter as tk
