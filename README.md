@@ -11,7 +11,7 @@ Our purpose is to make grading for teachers easiers and more effective. Students
 
 
 #### Who will use: 
-Teachers 
+Teachers and Students
 
 ___
 
